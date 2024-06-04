@@ -1,0 +1,161 @@
+.result {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+}
+.sort {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.sortCategory {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+    margin-top: 3em;
+}
+.sortCategory h3 {
+    align-self: center;
+    font-size: 20px;
+    color: #111111;
+    font-weight: 700;
+}
+.sortCategory ul {
+    display: block;
+    margin-bottom: 2em;
+}
+.sortCategory ul li {
+    display: flex;
+    gap: 15px;
+    color: #111111;
+    margin: 1em;
+}
+.sort hr{
+    width: 90%;
+    align-self: center;
+}
+.productsContainer {
+    display: flex;
+    flex-direction: column;
+}
+.productsContainer h1 {
+    margin: 2em;
+    color: #353535;
+}
+.placeHolder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.placeHolder h2 {
+    color: #353535;
+    font-weight: 700;
+}
+.placeHolder p {
+    color: #575656;
+    font-weight: 500;
+}
+
+.products {
+    margin: 3em;
+    width: 65vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 70px;
+}
+.inactive {
+    display: none;
+}
+
+.sortResponsive, .sortButton{
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .result {
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+    .sortButton{
+        color: #333333;
+        display: flex;
+        font-size: 23px;
+        padding: .7em 1em;
+    }
+    .sortButton span {
+        font-size: 17px;
+    }
+    .sortResponsive {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        animation: appear .5s ease-in-out ;
+        background-color: #f7f5f5;
+    }
+    .sortCategory {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+    .firstLine {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .firstLine h3 {
+        margin-left: 2.5em;
+    }
+    .closeSortMenu{
+        font-size:  30px;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        color: #494949;
+    }
+    .productsContainer h1 {
+        margin:1em 0.8em;
+        color: #353535;
+        font-size: 20px;
+    }
+    .products {
+        margin: 0;
+        align-self: center;
+        justify-self: center;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-gap: 20px;
+    }
+    .placeHolder h2 {
+        color: #353535;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .placeHolder p {
+        color: #575656;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    
+    
+    @keyframes appear {
+        0%{
+            opacity: 0;
+            transform: translateY(-90%);
+            height: 1%;
+        }
+        50%{
+            opacity: 0;
+            height: 1%;
+        }
+    }
+}

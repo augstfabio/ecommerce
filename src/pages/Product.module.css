@@ -1,0 +1,525 @@
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 100vh;
+    width: 90%;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.infoProduct {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+}
+
+.infoProduct h1 {
+    align-self: flex-start;
+    color: #111111;
+    font-size: 27px;
+    width: 600px;
+    padding: 1em;
+}
+
+.infoProduct img {
+    object-fit: cover;
+    width: 300px;
+    height: 400px;
+    border: solid 1px #111111;
+    padding: 1em;
+}
+
+.aboutProduct {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5em;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.pricing p,
+h2 {
+    color: #111111;
+}
+
+.pricing h2 {
+    font-size: 30px;
+}
+
+.aboutBtns {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.aboutBtns button {
+    height: 40px;
+    width: 200px;
+    border: none;
+    background-color: #111111;
+    color: aliceblue;
+    cursor: pointer;
+
+}
+
+.removeCart {
+    background-color: rgb(151, 29, 29) !important;
+}
+
+.aboutBtns button:hover {
+    color: #d8d6d6;
+    background-color: #242323;
+}
+
+.heart {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.heartFav {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ee4d4d;
+}
+
+.heart:hover {
+    color: #ee4d4d;
+}
+
+.description {
+    width: 700px;
+    margin: 1em;
+    padding: 1.5em;
+    border: solid 1px #111111;
+    color: #111111;
+}
+
+.similar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.similar h3 {
+    font-size: 23px;
+    color: #111111;
+}
+
+.rel {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 2em;
+    padding-bottom: 2em;
+    color: #111111;
+}
+
+.similarCard img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.finally {
+    color: #111111;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    gap: 20px;
+    padding: 7em 0;
+}
+
+.finallyContainer {
+    padding: 1.8em;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart h3 {
+    align-self: center;
+    font-size: 22px;
+}
+
+.finalizarCompra {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.finalizarCompra h4 {
+    font-size: 24px;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.finalizarCompra button {
+    height: 40px;
+    color: #ffffff;
+    border: none;
+    background-color: #26aa1a;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+}
+
+.content hr {
+    width: 100%;
+    color: #111111;
+
+}
+
+.redirect {
+    cursor: pointer;
+}
+
+.goBag {
+    background-color: #222222 !important;
+}
+
+.redirect:hover {
+    color: rgb(134, 133, 133);
+}
+
+.infoProductSkeleton {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+
+}
+
+.infoProductSkeleton span {
+    align-self: flex-start;
+    animation: skeleton 1s infinite forwards;
+    font-size: 27px;
+    width: 500px;
+    height: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.aboutProductSkeleton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5em;
+}
+
+.aboutProductSkeleton span {
+    width: 200px;
+    height: 300px;
+    animation: skeleton 1s infinite forwards;
+}
+
+.pricingSkeleton {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.priceSkeleton {
+    width: 100px;
+    height: 40px;
+    animation: skeleton 1s infinite forwards;
+}
+
+.aboutBtnsSkeleton {
+    width: 300px;
+    height: 40px;
+    animation: skeleton 1s infinite forwards;
+}
+
+.descriptionSkeleton {
+    width: 700px;
+    height: 100px;
+    margin: 1em;
+    padding: 1.5em;
+    animation: skeleton 1s infinite forwards;
+    color: #111111;
+}
+
+@keyframes skeleton {
+    from {
+        background-color: #111111;
+    }
+
+    to {
+        background-color: #d8d6d6;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 100vh;
+        width: 90%;
+
+    }
+
+    .infoProduct {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .infoProduct h1 {
+        align-self: flex-start;
+        color: #111111;
+        font-size: 20px;
+        width: 100%;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    .infoProduct img {
+        object-fit: cover;
+        width: 220px;
+        height: 300px;
+        border: solid 1px #33333338;
+        padding: 1em;
+    }
+
+    .aboutProduct {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .pricing {
+        align-self: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: flex-start;
+    }
+
+    .pricing p {
+        font-size: 13px;
+
+    }
+
+    .pricing h2 {
+        font-size: 23px;
+
+    }
+
+    .aboutBtns {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .aboutBtns button {
+        height: 40px;
+        width: 280px;
+        border: none;
+        background-color: #111111;
+        color: aliceblue;
+        cursor: pointer;
+
+    }
+
+    .heart {
+        padding: .5em;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .heartFav {
+        padding: .5em;
+        font-size: 25px;
+        cursor: pointer;
+        color: #ee4d4d;
+    }
+
+    .description {
+        width: 90%;
+        margin: 1em;
+        padding: 1.5em;
+        border: solid 1px #11111162;
+        color: #111111;
+    }
+
+    .similar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .similarCard img {
+        object-fit: cover;
+        width: 70px;
+        height: 70px;
+    }
+
+    .similar h3 {
+        font-size: 17px;
+        color: #111111;
+    }
+
+    .rel {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        align-items: center;
+        justify-items: center;
+        width: 80%;
+        margin: 2em 0;
+        padding: 0;
+        gap: 0;
+        color: #111111;
+    }
+
+    .finally {
+        color: #111111;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: .5em;
+        gap: 20px;
+    }
+
+    .finallyContainer {
+        padding: 3em;
+        width: 60%;
+        border: solid 1px black;
+        border-radius: 5px;
+    }
+
+    .finalizarCompra {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .redirect {
+        cursor: pointer;
+        width: 100% !important;
+    }
+
+    .finalizarCompra button {
+        width: 200px !important;
+        height: 40px;
+        color: #ffffff;
+        border: none;
+        background-color: #26aa1a;
+        font-family: "Lato", sans-serif;
+        cursor: pointer;
+    }
+
+    .goBag {
+        background-color: #222222 !important;
+
+
+    }
+
+    .redirect:hover {
+        color: rgb(134, 133, 133);
+    }
+
+    .similarCard {
+        width: 70px;
+        margin: 1em;
+        padding: 0;
+    }
+
+    .infoProductSkeleton {
+        align-items: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 1em;
+
+    }
+
+    .infoProductSkeleton span {
+        align-self: center;
+        animation: skeleton 1s infinite forwards;
+        font-size: none;
+        width: 70%;
+        height: 40px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .aboutProductSkeleton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .aboutProductSkeleton span {
+        width: 70vw;
+        height: 300px;
+        margin: 1em 0;
+        align-self: center;
+        animation: skeleton 1s infinite forwards;
+    }
+
+    .pricingSkeleton {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .priceSkeleton {
+        width: 100px;
+        height: 40px;
+        animation: skeleton 1s infinite forwards;
+    }
+
+    .aboutBtnsSkeleton {
+        width: 300px;
+        height: 40px;
+        animation: skeleton 1s infinite forwards;
+    }
+
+    .descriptionSkeleton {
+        width: 90%;
+        height: 100px;
+        margin: 1em 0;
+        padding: 1.5em;
+        animation: skeleton 1s infinite forwards;
+        color: #111111;
+    }
+
+}

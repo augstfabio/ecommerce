@@ -1,0 +1,68 @@
+.card {
+    max-width: 200px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+.image {
+    width: 100%;
+    height: 250px;
+   
+}
+.image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+.name p, .price p {
+    margin: .5em;
+    text-transform: uppercase;
+    color: black;
+    
+}
+.name p{
+    font-size: 15px;
+
+}
+.name p:hover{
+    color: rgb(134, 133, 133);
+    
+}
+.price p {
+    color: #2f535e;
+}
+.rate span {
+    color: rgb(219, 191, 64);
+}
+@media screen and (max-width:800px) {
+    .card {
+        max-width: 150px;
+        padding: 1em;
+        max-height: 270px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .image {
+        width: 100px;
+        height: 120px;
+        padding: 1em;
+        align-self: center;
+    }
+    .name p, .price p {
+        margin: .4em;
+        text-transform: uppercase;
+        color: black;
+        
+    }
+    .name p{
+        font-size: 12px;
+    }
+    .rate {
+        font-size: 12px;
+    }
+    .price p {
+        font-size: 14px;
+    }
+}

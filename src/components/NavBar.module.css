@@ -1,0 +1,299 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #111111;
+    padding: 3em;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 20%;
+    max-width: 80%;
+    align-self: center;
+
+}
+
+.logoContainer {
+    border-bottom: solid 2px #d8d6d6;
+    cursor: pointer;
+    padding-bottom: 0.8em;
+    min-width: 150px;
+}
+
+.logoContainer a {
+    text-decoration: none;
+    color: #d8d6d6;
+    text-transform: uppercase;
+}
+
+.logoContainer h1 {
+    font-weight: 800;
+}
+
+.navigationContainer {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+
+}
+
+.navigationContainer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 10em;
+}
+
+.navigationContainer ul a {
+    margin: 0 1.5em;
+    font-size: 17px;
+    color: #c2bdbd;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+.navigationContainer ul a:hover {
+    color: #868686;
+}
+
+.bagContainer {
+    font-size: 35px;
+    color: #d8d6d6;
+    position: relative;
+}
+
+.bagContainer span {
+    position: absolute;
+    text-align: center;
+    padding: 3px;
+    width: 20px;
+    top: 20px;
+    left: 20px;
+    color: #eeeeee;
+    background-color: rgb(187, 177, 33);
+    font-size: 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    animation: appearNumber 0.5s;
+
+}
+
+@keyframes appearNumber {
+    from {
+        position: absolute;
+        text-align: center;
+        top: 20px;
+        left: 20px;
+        width: 1px;
+        font-size: 0px;
+        border-radius: 20px;
+        font-weight: 600;
+        opacity: 0;
+        rotate: -180deg;
+
+    }
+
+    to {
+        width: 20px;
+        ;
+    }
+}
+
+.searchContainer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:10px;
+}
+
+.inputContainer {
+    width:60%;
+    height: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputContainer div {
+    margin: 0 3em;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.input {
+    margin-left: 30px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+  
+}
+
+.input:focus {
+    border: none;
+    outline: none;
+
+}
+
+.submit {
+    height: 100%;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    color: rgb(158, 156, 156);
+}
+
+
+.menuIcon {
+    cursor: pointer;
+    font-size: 30px;
+    margin-left:12px;
+    text-align: center;
+
+}
+
+.ulContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    background-color: #333333;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation: appear 0.3s ease;
+}
+@keyframes appear {
+    from {
+        left: 10em;
+    }
+    to {
+        left: none;
+    }
+}
+.responsiveUl {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 40%;
+    width: 100%;
+    margin-top: 9em !important;
+    list-style: none;
+    
+}
+
+.responsiveUl li {
+    width: 90%;
+    margin-right: 3em;
+    margin: 1em;text-align: start !important;
+}
+
+.responsiveUl a {
+    font-size: 25px !important;
+    width: 100%;
+
+}
+.ulContainer span {
+    margin: 2em;
+    font-size: 50px;
+    animation: exitAnimation 1s forwards;
+    cursor: pointer;
+}
+@keyframes exitAnimation {
+    0% {
+        
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    
+    60%{
+        rotate: 20deg;
+        transform: scale(1.3);
+    }
+   
+    
+    100% {
+
+        transform: none;
+    }
+
+}
+@media screen and (max-width:1500px) {
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 20%;
+        max-width: none;
+        width: 85vw;
+        align-self: center;
+    
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        background-color: #111111;
+        padding: 2em;
+        position: relative;
+        
+    }
+    .bagContainer {
+        font-size: 30px;
+    }
+    .inputContainer {
+        width:94%;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    .searchContainer {
+        margin-left: 0;
+        width:100vw;
+        height: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+    .input {
+        margin-left: 30px;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border: none;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+      
+    }
+    
+    .logoContainer h1 {
+        font-weight: 800;
+        font-size: 20px;
+    }
+    .navigationContainer{
+        flex-direction: row-reverse;
+    }
+  }

@@ -1,0 +1,107 @@
+.home {
+    margin-top: 4em;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.category h2, .more {
+    font-size: 27px;
+    color: #111111;
+    font-weight: 900;
+    align-self: flex-start;
+    margin-left: 8.5em;
+
+}
+
+.products {
+    margin: 3em;
+    width: 65vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 70px;
+}
+
+
+
+.more button {
+    height: 40px;
+    width: 100px;
+    font-family: "Lato", sans-serif;
+    color: #d8d6d6;
+    border:none;
+    background-color:#111111;
+    cursor: pointer;
+    margin-bottom: 3em;
+}
+.more button:hover {
+    color: #d8d6d6;
+    background-color:#242323;
+}
+.skeleton {
+    margin-top: 3em;
+    width: 80%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.skeleton div {
+    width: 250px;
+    height: 300px;
+    animation: skeleton 1s infinite forwards;
+}
+@keyframes skeleton {
+    from {
+        background-color: #111111;
+    }
+    to {
+        background-color: #d8d6d6;
+    }
+}
+@media screen and (max-width:800px) {
+    .category h2, .more {
+        margin: 1em 0;
+        font-size: 24px;
+        color: #111111;
+        font-weight: 900;
+        align-self: center;
+        margin-left: 0;
+    }
+    .category {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .home {
+        margin-top: 0;
+    }
+    .products {
+        margin: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        grid-gap: 5px;
+    }
+    .skeleton {
+        margin: 1em 0;
+        width: 100vw;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .skeleton div {
+        width: 150px;
+        height: 190px;
+        animation: skeleton 1s infinite forwards;
+    }
+}

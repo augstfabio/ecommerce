@@ -1,0 +1,124 @@
+.jewelery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jeweleryContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 2em;
+}
+.jeweleryContainer h1 {
+    color: #333333;
+    font-weight: 700;
+}
+.products {
+    margin: 3em;
+    width: 65vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 70px;
+}
+.skl {
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: center;
+    width: 70%;
+    margin: 2em;
+    margin-bottom: 3em;
+}
+.skl span {
+    align-self: flex-start;
+    width: 350px;
+    height: 40px;
+    animation: skeleton 1s infinite forwards;
+}
+.skeleton {
+    margin-top: 3em;
+    width: 80%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.skeleton div {
+    width: 250px;
+    height: 300px;
+    animation: skeleton 1s infinite forwards;
+}
+@keyframes skeleton {
+    from {
+        background-color: #111111;
+    }
+    to {
+        background-color: #d8d6d6;
+    }
+}
+@media screen and (max-width:800px) {
+    .jeweleryContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 1em;
+    }
+
+    .jeweleryContainer h1 {
+        color: #333333;
+        font-size: 23px;
+        font-weight: 700;
+        align-self: center;
+    }
+
+    .products {
+        margin: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        grid-gap: 5px;
+    }
+
+    .jewelery {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+
+    .skl {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        margin: 2em;
+        margin-bottom: 3em;
+    }
+
+    .skl span {
+        align-self: center;
+        width: 70%;
+        height: 30px;
+        animation: skeleton 1s infinite forwards;
+    }
+
+    .skeleton {
+        margin-top: 0;
+        width: 100vw;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+
+    .skeleton div {
+        width: 150px;
+        height: 190px;
+        animation: skeleton 1s infinite forwards;
+    }
+}
